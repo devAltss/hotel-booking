@@ -1,12 +1,30 @@
-.header
+.navbar
   background-color: $default
   &-top
     display: flex
     align-items: center
     justify-content: space-between
     padding: 40px 0
+    &__menu-button
+      display: none
   &__search
     margin: 0 auto 0 108px
+ 
+  &-bottom
+    background-color: $dark
+  &-menu
+    list-style-type: none
+    margin: 0
+    padding: 31px 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: $default 
+    &__link
+      color: inherit
+
+.logo
+  width: 177px
 
 .search
   display: flex
@@ -32,6 +50,9 @@
     border: none
     background: $primary
     cursor: pointer
+    img
+      margin: 0 auto 
+    
 .user
   display: flex
   align-items: center
@@ -43,6 +64,9 @@
   &__name
     margin-left: 18px
     color: $text
+    
+
+
 
 
 

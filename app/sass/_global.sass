@@ -1,5 +1,11 @@
-*
+html 
   box-sizing: border-box
+
+*,
+*::before,
+*::after 
+  box-sizing: inherit
+
   
 html,
 body 
@@ -8,6 +14,7 @@ body
 
 body
   font-family: 'Mulish', sans-serif
+  background-color: $secondary
   font-weight: 400
   font-size: 14px
   line-height: 1.2em
@@ -33,14 +40,16 @@ body
   margin: 0 auto
   padding: 0 15px
 
+ul[class] 
+  list-style: none
 
-.container-fluid
-  max-width: 1460px
-  margin: 0 auto
-  padding: 0 10px
 
 a
   text-decoration: none
+
+img 
+  max-width: 100%
+  display: block
 
 
 
